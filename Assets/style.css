@@ -22,11 +22,13 @@ div {
 
 .logo {
   height: 1.5rem;
+  padding-right: 1rem;
 }
 
 header {
   background-image: url("Images/glasses-bg.png");
   background-size: cover;
+  background-position: center;
   height: 30rem;
   padding-top: 1rem;
 }
@@ -47,11 +49,6 @@ header {
 .logo-name img {
   padding-left: 2rem;
 }
-
-.logo-name span {
-  padding-left: 1rem;
-}
-
 
 nav ul {
   display: flex;
@@ -81,4 +78,54 @@ nav ul li {
 
 .main-banner h1 {
   padding: 1.5rem 5rem;
+}
+
+.products {
+  justify-content: center;
+}
+
+.product {
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product img {
+    margin-bottom: 1rem;
+    width: 5rem;
+}
+
+.product img.paper-icon {
+  width: 3.5rem;
+}
+
+.info {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+
+.section {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.info .title {
+  background-color: cadetblue;
+  padding: .5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+
+footer {
+  padding: 4rem;
+  background-color: azure;
+  align-items: center;
 }
