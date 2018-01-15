@@ -25,6 +25,7 @@ div {
   padding-right: 1rem;
 }
 
+/* Header */
 header {
   background-image: url("Images/glasses-bg.png");
   background-size: cover;
@@ -55,8 +56,13 @@ nav ul {
   justify-content: space-between;
 }
 
+#shortnav {
+  display: none;
+}
+
+
 nav ul li {
-  padding: 1rem 2rem 1rem 0;
+  padding-right: 2rem;
 }
 
 .banner {
@@ -80,6 +86,66 @@ nav ul li {
   padding: 1.5rem 5rem;
 }
 
+@media only screen and (max-width: 1024px){
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .top-section {
+    margin-top: 0;
+  }
+
+  .main-banner {
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+
+  .main-banner h1 {
+    padding: .75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #fullnav {
+    display:none
+  }
+
+  #shortnav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .main-banner {
+    margin-top: 9rem;
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+
+  .logo-name span {
+    display: none;
+  }
+}
+
+/* Middle Section */
 .products {
   justify-content: center;
 }
@@ -105,8 +171,8 @@ nav ul li {
 }
 
 .info {
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin: 3rem 0;
+  /* margin-bottom: 3rem; */
   justify-content: center;
 }
 
@@ -115,7 +181,7 @@ nav ul li {
   margin-right: 5%;
 }
 
-.info .title {
+.title {
   background-color: cadetblue;
   padding: .5rem 1.25rem;
   font-weight: bold;
@@ -124,8 +190,63 @@ nav ul li {
   width: 10rem;
 }
 
+@media only screen and (max-width: 560px) {
+   .products, .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products {
+    padding: 1.77rem 0;
+  }
+
+  .product {
+    padding-top: 1.54rem;
+    margin: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .product, .description {
+    font-size: .77rem;
+  }
+
+  .section {
+    width: 100%;
+    margin: auto;
+  }
+
+  .title {
+    text-align: center;
+    width: 100%;
+    padding: .5rem 0;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: .77rem;
+    line-height: 1.4rem;
+  }
+}
+
+/* Footer Section */
 footer {
   padding: 4rem;
   background-color: azure;
   align-items: center;
+}
+
+@media only screen and (max-width: 560px) {
+
+  footer {
+    justify-content:center;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  .logo {
+    padding: 0;
+  }
 }
